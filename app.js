@@ -41,9 +41,10 @@ button.addEventListener("click", async () => {
       body: "Firebase push notification is ready."
     });
 
-  } catch (error) {
-    console.error(error);
-    status.textContent = "Firebase setup error. Check the configuration.";
+  } } catch (error) {
+  console.error(error);
+  status.textContent = "Error: " + error.message;
+}
   }
 });
 
